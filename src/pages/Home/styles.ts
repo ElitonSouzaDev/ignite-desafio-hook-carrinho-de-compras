@@ -2,8 +2,11 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 
 export const ProductList = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* grid-template-columns: repeat(3, 1fr); */
   grid-gap: 20px;
   list-style: none;
 
@@ -13,6 +16,7 @@ export const ProductList = styled.ul`
     background: #fff;
     border-radius: 4px;
     padding: 20px;
+    width: 310px;
 
     img {
       align-self: center;
